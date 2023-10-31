@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <title>simple carousel</title>
+</head>
+<!-- In the assignment you have to create a simple carousel consisting of three slides with a controller and indicator
+on it to make it easy for the user to navigate to other slides easily.
+Also for all these three slides, you have to gather the image from the pw skills website (https://pwskills.com/).
+Any three recent course images can be used in it. -->
+
+<body>
+    <div class="container" style="width:800px; height:600px; border:5px solid black">
+        <div class="d-flex justify-content-center align-items-center vh-100" >
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" style="width: 600px">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/64a514966977cc6e87e27504.png"
+                            class="d-block w-100" alt="thumbnails">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/64c79c06228e13139bdc6cb7.png"
+                            class="d-block w-100" alt="Building MicroServices in Java for Cloud">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.pwskills.com/assets/uploads/thumbnails/6530ae18d85a4dc8e3aa85bf.png"
+                            class="d-block w-100" alt="Decode Data Science With Machine Learning 1.0">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    
+    </div>
+   
+    <!-- adding bootstrap js script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
